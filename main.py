@@ -160,7 +160,7 @@ def main():
     # TODO : visulize your training curve
     # model.plot()
     lrs = np.linspace(0.1,1,10)
-    model.plot(X_train, y_train, lrs, classes_num, 300)
+    model.plot(X_train, y_train_oh, lrs, classes_num, 300)
     m = X_test.shape[0]
     rp = np.random.permutation(m)
     for i in range (m):
